@@ -14,7 +14,8 @@
     "npm": "^5.0.0"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mssql": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",

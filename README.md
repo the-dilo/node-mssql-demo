@@ -27,6 +27,28 @@ yarn
 npm start
 ```
 
+## Microsoft SQL Stuff
+
+
+* https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker
+* `docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@ssword123' -p 1433:1433 -d microsoft/mssql-server-linux`
+* sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDB;"
+* https://dbeaver.jkiss.org/
+  * Create New Connection
+  * MS SQL Server -> Microsoft Driver
+  * JDBC URL (leave blank; it will be auto-filled)
+  * Host: `127.0.0.1`
+  * Database/Schema: `DemoDB`
+  * User name: `sa`
+  * Password: `P@ssword123
+  * Test Connection (should get a popup that indicates "Connected")
+  * Click "Next"
+  * Click "Next" (i.e. don't set anything for SSH tunnel or SOCKS Proxy)
+  * Click "Finish"
+* `sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDB -i ./createSchema.sql`
+
+
+
 ## License
 
 The MIT License (MIT)
