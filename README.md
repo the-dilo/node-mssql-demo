@@ -60,7 +60,18 @@ sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDatabase -i ./createSchema.sql
 
 2) Copy `config.js.example` to `config.js`
 
-3) Update the user, password, server, and database values in `config.js` to reflect those you used when creating the database
+3) Update the user, password, server, and database values in `config.js` to reflect those you used when creating the database. Here's an example configuration:
+
+```javascript
+module.exports = {
+  db: {
+    user: 'sa',
+    password: 'P@ssword123',
+    server: '127.0.0.1',
+    database: 'DemoDatabase'
+  }
+}
+```
 
 ## Run the demo
 
