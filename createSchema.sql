@@ -1,7 +1,7 @@
--- create DemoDB first by running this command:
--- sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDB;"
+-- create DemoDatabase first by running this command:
+-- sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDatabase;"
 -- then run this command by running the following:
--- sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDB -i ./createSchema.sql
+-- sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDatabase -i ./createSchema.sql
 
 CREATE SCHEMA DemoSchema;
 GO
