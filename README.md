@@ -44,7 +44,7 @@ sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDatabase;"
   1. Host: `127.0.0.1`
   1. Database/Schema: `DemoDatabase`
   1. User name: `sa`
-  1. Password: `P@ssword123
+  1. Password: `P@ssword123`
   1. Test Connection (you should get a popup that indicates "Connected")
   1. Click "Next"
   1. Click "Next" (i.e. don't set anything for SSH tunnel or SOCKS Proxy)
