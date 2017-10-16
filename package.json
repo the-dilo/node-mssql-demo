@@ -1,11 +1,11 @@
 {
-  "name": "basic-express-server",
-  "description": "basic-express-server",
-  "version": "0.3.0",
-  "homepage": "https://github.com/thegreatsunra/basic-express-server",
+  "name": "node-mssql-demo",
+  "description": "node-mssql-demo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thegreatsunra/node-mssql-demo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thegreatsunra/basic-express-server.git"
+    "url": "https://github.com/thegreatsunra/node-mssql-demo.git"
   },
   "author": "Dane Petersen <thegreatsunra@gmail.com>",
   "license": "MIT",

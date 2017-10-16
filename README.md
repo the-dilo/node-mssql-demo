@@ -1,6 +1,6 @@
-# basic-express-server
+# node-mssql-demo
 
-> basic-express-server
+> node-mssql-demo
 
 ## Getting started
 
@@ -9,8 +9,8 @@
 2) clone this repo
 
 ```bash
-git clone https://github.com/thegreatsunra/basic-express-server.git
-cd basic-express-server
+git clone https://github.com/thegreatsunra/node-mssql-demo.git
+cd node-mssql-demo
 ```
 
 3) install dependencies
@@ -29,7 +29,6 @@ npm start
 
 ## Microsoft SQL Stuff
 
-
 * https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker
 * `docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@ssword123' -p 1433:1433 -d microsoft/mssql-server-linux`
 * sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDB;"
@@ -46,8 +45,6 @@ npm start
   * Click "Next" (i.e. don't set anything for SSH tunnel or SOCKS Proxy)
   * Click "Finish"
 * `sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDB -i ./createSchema.sql`
-
-
 
 ## License
 
