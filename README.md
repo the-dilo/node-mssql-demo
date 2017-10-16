@@ -52,7 +52,7 @@ sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -Q "CREATE DATABASE DemoDatabase;"
 
 ## Configure demo to connect to SQL Server
 
-1) Run this command from the node-mssql-demo folder to create the schema that will be used for the demo
+1) Run this command from the node-mssql-demo folder to use `./createSchema.sql` to create the schema that will be used for the demo
 
 ```bash
 sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDatabase -i ./createSchema.sql
@@ -71,6 +71,12 @@ module.exports = {
     database: 'DemoDatabase'
   }
 }
+```
+
+4) If you changed the name of the schema or table in `./createSchema.sql`, update the query values around line 50 of `./index.js` to reflect your changes. Here's what the default line looks like:
+
+```javascript
+const query = `INSERT INTO DemoSchema.DemoTable ("at", "name") VALUES (@at, @name)`
 ```
 
 ## Run the demo
