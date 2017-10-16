@@ -70,6 +70,14 @@ sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDatabase -i ./createSchema.sql
 npm start
 ```
 
+## Clean up and/or start over
+
+1) With the SQL server running, run this command from the node-mssql-demo folder to destroy the database
+
+```bash
+sqlcmd -S 127.0.0.1 -U sa -P P@ssword123 -d DemoDatabase -i ./destroySchema.sql
+```
+
 ## License
 
 The MIT License (MIT)
